@@ -1,12 +1,15 @@
-import numpy as np
 list_of_numbers =[]
-for number in np.arange(1.5,5.5,0.5):
-    if number.is_integer():
-        list_of_numbers.append(int(number))
+start =1.5
+step = 0.5
+stop = 5
+while (start <= stop):
+    if start.is_integer():
+        list_of_numbers.append(int(start))
     else:
-        list_of_numbers.append(number)
-
+        list_of_numbers.append(start)
+    start =start + step
 print(list_of_numbers)
+
 
 
 
