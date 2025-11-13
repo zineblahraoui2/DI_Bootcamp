@@ -11,7 +11,7 @@ class Zoo :
 
     def get_animals(self):
         for animal in self.animals:
-            print(animal)
+            animal
     def sell_animal(self,animal_sold):
         for animal in self.animals:
             if animal_sold is animal:
@@ -19,7 +19,6 @@ class Zoo :
 
     def sort_animals(self):
         self.animals.sort()
-        print(self.animals)
         dict_of_animals ={}
         for i,value in enumerate(self.animals,start= 0):
             key_carachter = chr(ord(("a"))+i)
